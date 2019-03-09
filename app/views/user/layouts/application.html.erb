@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toeic</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'user/application', media: 'all'%>
+  <%= javascript_include_tag 'user/application'%>
+</head>
+
+<body>
+  <div class="col-md-2">
+    <%= render 'user/layouts/navigation' %>
+  </div>
+  <div class="col-md-10 page-right">
+    <div>
+      <%= render 'user/layouts/topnavbar' %>
+    </div>
+    <div>
+      <%= yield %>
+    </div>
+  </div>
+
+  <script>
+    <%= sanitize custom_bootstrap_flash %>
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.slt-vocabulary {
+    width: 150px;
+    height: 34px;
+}
+.btn-click {
+    height: 34px;
+}
+.instruction p {
+    margin: 0;
+}
+.instruction {
+    padding: 5px 0 0 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.body {
+    margin: 5px 0;
+}
+.slt-level {
+    width: 30% !important;
+    margin: 5px auto;
+    margin-left:10px;
+    display: inline-flex;
+}
+.cell_16 {
+    width: 40% !important;
+}
+.cell_36 {
+    width: 70% !important;
+}
+.cell_64 {
+    width: 90% !important;
+}
+.vocabulary {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.cell {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    vertical-align: middle;
+}
+th {
+    background: rgba(33, 37, 41, 0.4);
+}
+th:hover{
+    cursor: pointer;
+}
+.active {
+    border: solid 1px red;
+    background: green;
+}

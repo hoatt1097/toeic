@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Operator Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operator_users.each do |operator_user| %>
+      <tr>
+        <td><%= link_to 'Show', operator_user %></td>
+        <td><%= link_to 'Edit', edit_operator_user_path(operator_user) %></td>
+        <td><%= link_to 'Destroy', operator_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Operator User', new_operator_user_path %>

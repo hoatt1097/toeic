@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toeic</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'user/application', media: 'all'%>
+  <%= javascript_include_tag 'user/application'%>
+</head>
+
+<body>
+<div class="container">
+  <%= yield %>
+</div>
+
+<script>
+  <%= sanitize custom_bootstrap_flash %>
+</script>
+</body>
+</html>
