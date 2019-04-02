@@ -1,7 +1,7 @@
 class User::SessionsController < User::BaseController
   layout 'user/layouts/login'
   skip_before_action :enforce_user_sign_in
-  def new
+  def index
   end
 
   def create

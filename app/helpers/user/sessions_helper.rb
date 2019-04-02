@@ -24,4 +24,15 @@ module User::SessionsHelper
     session.delete(:user_user_id)
     @current_user_user = nil
   end
+
+  # Returns the current signed in user (if any)
+  def current_user
+    if session[:user_user_id]
+      @current_user ||= User::User.find_by(id: session[:user_user_id])
+    end
+  end
+
+  def lesson
+    User::Lesson.all
+  end
 end

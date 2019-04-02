@@ -1,7 +1,7 @@
 class Operator::SessionsController < Operator::BaseController
   layout 'operator/layouts/login'
   skip_before_action :enforce_operator_sign_in
-  def new
+  def index
   end
 
   def create

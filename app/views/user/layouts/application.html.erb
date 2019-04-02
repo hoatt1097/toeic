@@ -4,23 +4,24 @@
   <title>Toeic</title>
   <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag    'user/application', media: 'all'%>
-  <%= javascript_include_tag 'user/application'%>
+  <%= stylesheet_link_tag 'user/application', media: 'all'%>
 </head>
 
 <body>
-  <div class="col-md-2">
-    <%= render 'user/layouts/navigation' %>
-  </div>
-  <div class="col-md-10 page-right">
-    <div>
-      <%= render 'user/layouts/topnavbar' %>
+  <div class="row">
+    <div class="col-md-2 col-xs-2 navigation-menu">
+      <%= render 'user/layouts/navigation' %>
     </div>
-    <div>
-      <%= yield %>
+    <div class="col-md-offset-2 col-xs-offset-2 col-md-10 col-sm-10 col-xs-12 content-content">
+      <div class="top">
+        <%= render 'user/layouts/topnavbar' %>
+      </div>
+      <div class="content" >
+        <%= yield %>
+      </div>
     </div>
   </div>
-
+  <%= javascript_include_tag 'user/application'%>
   <script>
     <%= sanitize custom_bootstrap_flash %>
   </script>

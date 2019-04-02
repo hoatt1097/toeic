@@ -1,0 +1,2 @@
+module Operator::VocabulariesHelper
+end

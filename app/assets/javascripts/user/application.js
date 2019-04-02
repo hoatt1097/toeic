@@ -13,4 +13,5 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require user/toastr/toastr.js
+//= require user/jquery/jquery-2.1.1.js
 //= require_tree

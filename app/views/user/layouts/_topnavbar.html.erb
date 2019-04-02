@@ -6,8 +6,8 @@
       <ul class="nav navbar-nav">
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <%= image_tag "user/avatar.png" , class:"img-circle", alt:"User Image", style: "width:30px"%>
-            <span class="hidden-xs">Trần Thiện Hòa</span>
+            <%= image_tag "user/avatar.png" , class:"img-circle", alt:"User Image", style: "width:30px"%>&nbsp;&nbsp;
+            <span><b><%= current_user.nickname %></b></span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->

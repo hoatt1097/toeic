@@ -12,7 +12,7 @@ class User::UsersController < User::BaseController
   def show
   end
 
-  # GET /user/users/new
+  # GET /user/users/index
   def new
     @user_user = User::User.new
   end

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  mean: MyString
+  word_type: MyString
+  synonym: MyString
+  antonyms: MyString
+
+two:
+  word: MyString
+  mean: MyString
+  word_type: MyString
+  synonym: MyString
+  antonyms: MyString

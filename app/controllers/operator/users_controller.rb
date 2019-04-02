@@ -12,7 +12,7 @@ class Operator::UsersController < Operator::BaseController
   def show
   end
 
-  # GET /operator/users/new
+  # GET /operator/users/index
   def new
     @operator_user = Operator::User.new
   end

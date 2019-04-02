@@ -10,7 +10,7 @@ class User::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
+  test "should get index" do
     get new_user_user_url
     assert_response :success
   end
